@@ -1,4 +1,5 @@
 import 'package:Maintanence/screens/home.dart';
+import 'package:Maintanence/screens/second.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,9 +10,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Airport Authority',
-      home: Home(),
+      initialRoute: '/home',
+      routes: {
+        '/home' :(context) => Home(),
+        '/second':(context)=>Second(),
+      },
     );
   }
 }
-
 

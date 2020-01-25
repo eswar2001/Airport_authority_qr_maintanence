@@ -12,7 +12,9 @@ class Home extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Buttons(name: 'New',onpressed: (){},),
+              Buttons(name: 'New',onpressed: (){
+                Navigator.pushNamed(context, '/second');
+              },),
               Buttons(name: 'Maintainence',onpressed: (){},)
             ],
           ),
