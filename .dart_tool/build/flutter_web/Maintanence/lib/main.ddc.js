@@ -1,4 +1,4 @@
-define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/home', 'packages/flutter/src/widgets/actions', 'packages/Maintanence/screens/second', 'packages/Maintanence/screens/ServiceList'], function(dart_sdk, packages__flutter__material, packages__Maintanence__screens__home, packages__flutter__src__widgets__actions, packages__Maintanence__screens__second, packages__Maintanence__screens__ServiceList) {
+define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/home', 'packages/flutter/src/widgets/actions', 'packages/Maintanence/screens/second', 'packages/Maintanence/screens/QRScanner', 'packages/Maintanence/screens/screen3', 'packages/Maintanence/screens/ServiceList', 'packages/Maintanence/screens/addservice'], function(dart_sdk, packages__flutter__material, packages__Maintanence__screens__home, packages__flutter__src__widgets__actions, packages__Maintanence__screens__second, packages__Maintanence__screens__QRScanner, packages__Maintanence__screens__screen3, packages__Maintanence__screens__ServiceList, packages__Maintanence__screens__addservice) {
   'use strict';
   const core = dart_sdk.core;
   const _js_helper = dart_sdk._js_helper;
@@ -10,11 +10,17 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/h
   const framework = packages__flutter__src__widgets__actions.src__widgets__framework;
   const binding = packages__flutter__src__widgets__actions.src__widgets__binding;
   const second = packages__Maintanence__screens__second.screens__second;
+  const QRScanner = packages__Maintanence__screens__QRScanner.screens__QRScanner;
+  const screen3 = packages__Maintanence__screens__screen3.screens__screen3;
   const ServiceList = packages__Maintanence__screens__ServiceList.screens__ServiceList;
+  const addservice = packages__Maintanence__screens__addservice.screens__addservice;
   const main = Object.create(dart.library);
   let BuildContextToHome = () => (BuildContextToHome = dart.constFn(dart.fnType(home.Home, [framework.BuildContext])))();
   let BuildContextToSecond = () => (BuildContextToSecond = dart.constFn(dart.fnType(second.Second, [framework.BuildContext])))();
+  let BuildContextToQRScanner = () => (BuildContextToQRScanner = dart.constFn(dart.fnType(QRScanner.QRScanner, [framework.BuildContext])))();
+  let BuildContextToScreen3 = () => (BuildContextToScreen3 = dart.constFn(dart.fnType(screen3.Screen3, [framework.BuildContext])))();
   let BuildContextToServiceList = () => (BuildContextToServiceList = dart.constFn(dart.fnType(ServiceList.ServiceList, [framework.BuildContext])))();
+  let BuildContextToAddService = () => (BuildContextToAddService = dart.constFn(dart.fnType(addservice.AddService, [framework.BuildContext])))();
   let BuildContextToWidget = () => (BuildContextToWidget = dart.constFn(dart.fnType(framework.Widget, [framework.BuildContext])))();
   let IdentityMapOfString$BuildContextToWidget = () => (IdentityMapOfString$BuildContextToWidget = dart.constFn(_js_helper.IdentityMap$(core.String, BuildContextToWidget())))();
   const CT = Object.create(null);
@@ -28,7 +34,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/h
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
         [_Location_column]: 31,
-        [_Location_line]: 16,
+        [_Location_line]: 19,
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
       });
     },
@@ -38,7 +44,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/h
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
         [_Location_column]: 30,
-        [_Location_line]: 17,
+        [_Location_line]: 20,
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
       });
     },
@@ -47,61 +53,91 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/h
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
-        [_Location_column]: 36,
-        [_Location_line]: 18,
+        [_Location_column]: 33,
+        [_Location_line]: 21,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
+      });
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C1 || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 22,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
+      });
+    },
+    get C5() {
+      return C5 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C1 || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 23,
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
       });
     },
     get C6() {
       return C6 = dart.const({
         __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "title",
-        [_Location_column]: 7,
-        [_Location_line]: 13,
-        [_Location_file]: null
-      });
-    },
-    get C7() {
-      return C7 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "initialRoute",
-        [_Location_column]: 7,
-        [_Location_line]: 14,
-        [_Location_file]: null
-      });
-    },
-    get C8() {
-      return C8 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "routes",
-        [_Location_column]: 7,
-        [_Location_line]: 15,
-        [_Location_file]: null
-      });
-    },
-    get C5() {
-      return C5 = dart.constList([C6 || CT.C6, C7 || CT.C7, C8 || CT.C8], widget_inspector._Location);
-    },
-    get C4() {
-      return C4 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C5 || CT.C5,
+        [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
-        [_Location_column]: 12,
-        [_Location_line]: 12,
+        [_Location_column]: 34,
+        [_Location_line]: 24,
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
       });
     },
     get C9() {
       return C9 = dart.const({
         __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C10 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "initialRoute",
+        [_Location_column]: 7,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C11 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "routes",
+        [_Location_column]: 7,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C8 = dart.constList([C9 || CT.C9, C10 || CT.C10, C11 || CT.C11], widget_inspector._Location);
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C8 || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 15,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
+      });
+    },
+    get C12() {
+      return C12 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
         [_Location_column]: 23,
-        [_Location_line]: 6,
+        [_Location_line]: 9,
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/main.dart"
       });
     }
@@ -115,14 +151,17 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/h
   let C0;
   let C2;
   let C3;
-  let C6;
-  let C7;
-  let C8;
-  let C5;
   let C4;
+  let C5;
+  let C6;
+  let C9;
+  let C10;
+  let C11;
+  let C8;
+  let C7;
   main.MyApp = class MyApp extends framework.StatelessWidget {
     build(context) {
-      return new app.MaterialApp.new({title: "Airport Authority", initialRoute: "/home", routes: new (IdentityMapOfString$BuildContextToWidget()).from(["/home", dart.fn(context => new home.Home.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), BuildContextToHome()), "/second", dart.fn(context => new second.Second.new({$creationLocationd_0dea112b090073317d4: C2 || CT.C2}), BuildContextToSecond()), "/maintainance", dart.fn(context => new ServiceList.ServiceList.new({$creationLocationd_0dea112b090073317d4: C3 || CT.C3}), BuildContextToServiceList())]), $creationLocationd_0dea112b090073317d4: C4 || CT.C4});
+      return new app.MaterialApp.new({title: "Airport Authority", initialRoute: "/home", routes: new (IdentityMapOfString$BuildContextToWidget()).from(["/home", dart.fn(context => new home.Home.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), BuildContextToHome()), "/second", dart.fn(context => new second.Second.new({$creationLocationd_0dea112b090073317d4: C2 || CT.C2}), BuildContextToSecond()), "/maintenance", dart.fn(context => new QRScanner.QRScanner.new({$creationLocationd_0dea112b090073317d4: C3 || CT.C3}), BuildContextToQRScanner()), "/screen3", dart.fn(context => new screen3.Screen3.new({$creationLocationd_0dea112b090073317d4: C4 || CT.C4}), BuildContextToScreen3()), "/servicelist", dart.fn(context => new ServiceList.ServiceList.new({$creationLocationd_0dea112b090073317d4: C5 || CT.C5}), BuildContextToServiceList()), "/addservice", dart.fn(context => new addservice.AddService.new({$creationLocationd_0dea112b090073317d4: C6 || CT.C6}), BuildContextToAddService())]), $creationLocationd_0dea112b090073317d4: C7 || CT.C7});
     }
   };
   (main.MyApp.new = function(opts) {
@@ -136,14 +175,14 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/Maintanence/screens/h
     build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
   dart.setLibraryUri(main.MyApp, "package:Maintanence/main.dart");
-  let C9;
+  let C12;
   main.main = function main$() {
-    return binding.runApp(new main.MyApp.new({$creationLocationd_0dea112b090073317d4: C9 || CT.C9}));
+    return binding.runApp(new main.MyApp.new({$creationLocationd_0dea112b090073317d4: C12 || CT.C12}));
   };
   dart.trackLibraries("packages/Maintanence/main", {
     "package:Maintanence/main.dart": main
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAU4B;AACxB,YAAO,iCACE,mCACO,iBACN,uDACN,SAAS,QAAC,WAAY,iGACtB,WAAU,QAAC,WAAU,uGACrB,iBAAgB,QAAC,WAAU;IAGjC;;;;;;EACF;;;;;;;;;AAhBe,0BAAO;EAAQ","file":"main.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAa4B;AACxB,YAAO,iCACE,mCACO,iBACN,uDACN,SAAS,QAAC,WAAY,iGACtB,WAAU,QAAC,WAAU,uGACvB,gBAAe,QAAC,WAAU,gHACxB,YAAW,QAAC,WAAU,0GACtB,gBAAe,QAAC,WAAU,sHAC1B,eAAc,QAAC,WAAU;IAG/B;;;;;;EACF;;;;;;;;;AAnBe,0BAAO;EAAQ","file":"main.ddc.js"}');
   // Exports:
   return {
     main: main

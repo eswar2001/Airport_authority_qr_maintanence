@@ -50,7 +50,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.setLibraryUri(service.ServiceData, "package:Maintanence/datastructure/service.dart");
   dart.setFieldSignature(service.ServiceData, () => ({
     __proto__: dart.getFields(service.ServiceData.__proto__),
-    id: dart.fieldType(core.int),
+    id: dart.fieldType(core.String),
     remarks: dart.fieldType(core.String),
     date: dart.fieldType(core.DateTime),
     cost: dart.fieldType(core.int)
@@ -58,7 +58,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.trackLibraries("packages/Maintanence/datastructure/service", {
     "package:Maintanence/datastructure/service.dart": service
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["service.dart"],"names":[],"mappings":";;;;;;;;;;;;IAIM;;;;;;IACG;;;;;;IACE;;;;;;IACL;;;;;;;;QAJc;QAAQ;QAAa;QAAU;IAA/B;IAAQ;IAAa;IAAU;;EAAM","file":"service.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["service.dart"],"names":[],"mappings":";;;;;;;;;;;;IAIS;;;;;;IACA;;;;;;IACE;;;;;;IACL;;;;;;;;QAJc;QAAQ;QAAa;QAAU;IAA/B;IAAQ;IAAa;IAAU;;EAAM","file":"service.ddc.js"}');
   // Exports:
   return {
     datastructure__service: service
