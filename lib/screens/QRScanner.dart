@@ -16,7 +16,7 @@ class _QRScannerState extends State<QRScanner> {
           children: <Widget>[
             RaisedButton(child:Text('Scan QR Code'),
             onPressed: (){},),
-            Text()
+          //  Text()
           ],
         )
       ),
