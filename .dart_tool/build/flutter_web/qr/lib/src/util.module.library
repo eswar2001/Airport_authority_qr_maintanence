@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["qr|lib/src/mask_pattern.dart","qr|lib/src/math.dart","qr|lib/src/mode.dart","qr|lib/src/polynomial.dart","qr|lib/src/qr_code.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

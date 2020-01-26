@@ -1,1 +1,1 @@
-{"p":["Maintanence","lib/screens/QRScanner.dart"],"s":[["Maintanence","lib/screens/QRScanner.dart"]],"d":[["flutter","lib/material.dart"],["flutter_barcode_scanner","lib/flutter_barcode_scanner.dart"]],"m":false,"is":true,"pf":"flutter_web"}
+{"p":["Maintanence","lib/screens/QRScanner.dart"],"s":[["Maintanence","lib/screens/QRScanner.dart"]],"d":[["Maintanence","lib/data/items.dart"],["Maintanence","lib/datastructure/item.dart"],["flutter","lib/material.dart"],["http","lib/http.dart"],["qrscan","lib/qrscan.dart"]],"m":false,"is":true,"pf":"flutter_web"}

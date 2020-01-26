@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["Maintanence|lib/data/items.dart","Maintanence|lib/datastructure/item.dart","Maintanence|lib/screens/QRScanner.dart","flutter|lib/cupertino.dart","flutter|lib/material.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

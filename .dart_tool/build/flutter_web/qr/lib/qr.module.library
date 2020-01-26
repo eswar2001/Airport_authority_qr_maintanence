@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["qr|lib/src/bit_buffer.dart","qr|lib/src/error_correct_level.dart","qr|lib/src/input_too_long_exception.dart","qr|lib/src/qr_code.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

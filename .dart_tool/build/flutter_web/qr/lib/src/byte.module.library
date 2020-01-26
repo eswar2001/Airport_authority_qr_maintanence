@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["qr|lib/src/bit_buffer.dart","qr|lib/src/mode.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["convert"],"hasMain":false}

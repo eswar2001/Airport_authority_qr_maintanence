@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["Maintanence|lib/data/items.dart","Maintanence|lib/datastructure/item.dart","Maintanence|lib/datastructure/service.dart","Maintanence|lib/screens/QRScanner.dart","datetime_picker_formfield|lib/datetime_picker_formfield.dart","flutter|lib/material.dart","intl|lib/intl.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

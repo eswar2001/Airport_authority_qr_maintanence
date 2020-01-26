@@ -1,8 +1,5 @@
-import 'package:Maintanence/data/items.dart';
 import 'package:Maintanence/data/services.dart';
-import 'package:Maintanence/datastructure/item.dart';
 import 'package:Maintanence/datastructure/service.dart';
-import 'package:Maintanence/screens/QRScanner.dart';
 import 'package:flutter/material.dart';
 
 

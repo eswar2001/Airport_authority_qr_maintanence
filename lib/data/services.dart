@@ -4,7 +4,7 @@ import 'package:Maintanence/datastructure/service.dart';
 
 class Services{
   List<ServiceData> servicelist =[
-    ServiceData(id: '001111',remarks: 'Remarksjdfttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt',date: DateTime.now(),cost: 250),
+    ServiceData(id: '001111',remarks: 'Remarksjdftttttttttttttttttttttttttttttt',date: DateTime.now(),cost: 250),
     ServiceData(id: '0022342',remarks: 'Remarks',date: DateTime.now()),
     ServiceData(id: '003245',remarks: 'Remarks',date: DateTime.now()),
     ServiceData(id: '004234',remarks: 'Remarks',date: DateTime.now()),
