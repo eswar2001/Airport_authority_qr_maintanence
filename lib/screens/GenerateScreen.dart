@@ -7,6 +7,7 @@ import 'dart:typed_data';
 import 'dart:ui';
 import 'dart:io';
 import 'package:flutter/rendering.dart';
+//import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:path_provider/path_provider.dart';
 
 class GenerateScreen extends StatefulWidget {
