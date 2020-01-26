@@ -1,6 +1,6 @@
 import 'dart:typed_data';
-
-import 'package:Maintanence/widgets/Buttons.dart';
+import 'package:Maintanence/data/items.dart';
+import 'package:Maintanence/datastructure/item.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
@@ -14,14 +14,19 @@ class Second extends StatefulWidget {
 }
 
 class _SecondState extends State<Second> {
+  String Itemname;
+  String serialno;
+  String Maintenance;
+
   var image;
   Uint8List bytes = Uint8List(200);
   Future _generateBarCode() async {
-    Uint8List result = await scanner.generateBarCode('qrcode number');
+    Uint8List result = await scanner.generateBarCode(serialno);
     this.setState(() => this.bytes = result);
   }
   final dateFormat = DateFormat("EEEE, MMMM d, yyyy 'at' h:mma");
-  DateTime date;
+  DateTime dateofinstal;
+  DateTime dateofreplacement;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,8 +41,22 @@ class _SecondState extends State<Second> {
                   SizedBox(
                     height: 22.0,
                   ),
-                  BuiltTextfield('Item Name'),
-                  BuiltTextfield('S/N no'),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
+                  child: TextField(
+                    onChanged:(val)=>Itemname=val,
+                    decoration: InputDecoration(labelText: 'Item Name',
+                      border: OutlineInputBorder(),),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
+                  child: TextField(
+                    onChanged:(val)=>serialno=val,
+                    decoration: InputDecoration(labelText:'S/N no',
+                      border: OutlineInputBorder(),),
+                  ),
+                ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
                     child: DateTimeField(
@@ -61,10 +80,17 @@ class _SecondState extends State<Second> {
                       format: dateFormat,
                       decoration: InputDecoration(labelText: 'Date of Installation',
                         border: OutlineInputBorder(),),
-                      onChanged: (dt) => setState(() => date = dt),
+                      onChanged: (dt) => setState(() => dateofinstal = dt),
                     ),
                   ),
-                  BuiltTextfield('Maintainence Frequency'),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
+                  child: TextField(
+                    onChanged:(val)=>Maintenance=val,
+                    decoration: InputDecoration(labelText: 'Mainatenece Frequency',
+                      border: OutlineInputBorder(),),
+                  ),
+                ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
                     child: DateTimeField(
@@ -88,16 +114,18 @@ class _SecondState extends State<Second> {
                       format: dateFormat,
                       decoration: InputDecoration(labelText: 'Date of Replacement',
                         border: OutlineInputBorder(),),
-                      onChanged: (dt) => setState(() => date = dt),
+                      onChanged: (dt) => setState(() => dateofreplacement = dt),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(32.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: <Widget>[RaisedButton ( child: Text("Generate Barcode"),
+                      children: <Widget>[
+                        RaisedButton ( child: Text("Generate Barcode"),
                       onPressed: (){
                         _generateBarCode();
+                        uploaddata();
                       },),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -119,6 +147,9 @@ class _SecondState extends State<Second> {
         )
     );
   }
+  void uploaddata(){
+    Items.items.add(Item(Itemname,serialno,dateofinstal,Maintenance,dateofreplacement));
+  }
   void _settingModalBottomSheet(context,Uint8List bytes){
     showModalBottomSheet(
         context: context,
@@ -128,11 +159,7 @@ class _SecondState extends State<Second> {
             child: Container(
               height: 150.0,
               child: Image.memory(bytes,scale: 1.0,)
-//            child: new Wrap(
-//              children: <Widget>[
-//                Image.memory(bytes,scale: 1.0,)
-//              ],
-//            ),
+
             ),
           );
         }
@@ -141,18 +168,3 @@ class _SecondState extends State<Second> {
 
 }
 
-class BuiltTextfield extends StatelessWidget {
-
-  BuiltTextfield(this.label);
-  String label;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
-      child: TextField(
-        decoration: InputDecoration(labelText: label,
-          border: OutlineInputBorder(),),
-      ),
-    );
-  }
-}

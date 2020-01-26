@@ -15,8 +15,8 @@ class Home extends StatelessWidget {
               Buttons(name: 'New',onpressed: (){
                 Navigator.pushNamed(context, '/second');
               },),
-              Buttons(name: 'Maintainence',onpressed: (){
-                Navigator.pushNamed(context, '/maintainance');
+              Buttons(name: 'Maintenence',onpressed: (){
+                Navigator.pushNamed(context, '/maintenance');
               },)
             ],
           ),

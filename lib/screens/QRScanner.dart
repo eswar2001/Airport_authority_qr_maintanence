@@ -1,19 +1,33 @@
+import 'package:Maintanence/data/items.dart';
+import 'package:Maintanence/datastructure/item.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:flutter/material.dart';
 
 class QRScanner extends StatefulWidget {
+  static String barcode="";
   @override
   _QRScannerState createState() => _QRScannerState();
 }
 
 class _QRScannerState extends State<QRScanner> {
-  String barcode;
-
+  static List<Item> availableitems;
   Future _scan() async {
     String barcode = await scanner.scan();
-    setState(() => this.barcode = barcode);
+    setState(() {
+      QRScanner.barcode = barcode;
+      for(int i=0;i<availableitems.length;i++)
+      {
+        if(QRScanner.barcode==availableitems[i].serialno)
+          Navigator.pushNamed(context, '/screen3',);
+      }
+    });
   }
-
+   @override
+  void initState() {
+     availableitems=Items.items;
+    // print(availableitems);
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +39,10 @@ class _QRScannerState extends State<QRScanner> {
             children: <Widget>[
               RaisedButton(child:Text('Scan QR Code'),
               onPressed: (){
-                _scan();
+                setState(() {
+                  _scan();
+                });
+
               },),
               Text(
                   'OR',
@@ -34,7 +51,7 @@ class _QRScannerState extends State<QRScanner> {
               padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 32.0),
                child: TextField(
                  onChanged: (value){
-                   barcode=value;
+                   QRScanner.barcode=value;
                  },
                  decoration: InputDecoration(labelText: 'Enter Manually',
                   border: OutlineInputBorder(),),
@@ -44,7 +61,12 @@ class _QRScannerState extends State<QRScanner> {
 
               RaisedButton(child:Text('Get Details'),
                 onPressed: (){
-                  print(barcode);
+                  for(int i=0;i<availableitems.length;i++)
+                  {
+                    if(QRScanner.barcode==availableitems[i].serialno)
+                      Navigator.pushNamed(context, '/screen3');
+                  }
+                  print(QRScanner.barcode);
                 },),
             ],
           )
