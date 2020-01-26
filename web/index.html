@@ -15,16 +15,26 @@
   <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/flutter_service_worker.js');
-      });
-    }
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAEmdSwbac-e4_9TIGzPH3oJny4pVBEcNM",
+    authDomain: "baymax-408db.firebaseapp.com",
+    databaseURL: "https://baymax-408db.firebaseio.com",
+    projectId: "baymax-408db",
+    storageBucket: "baymax-408db.appspot.com",
+    messagingSenderId: "509183291967",
+    appId: "1:509183291967:web:5b844669130229a4ea7e8a",
+    measurementId: "G-61BZCVQ98Y"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
