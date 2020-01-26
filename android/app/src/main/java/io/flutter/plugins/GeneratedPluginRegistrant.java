@@ -14,6 +14,6 @@ import io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry;
 public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);
-      com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin.registerWith(shimPluginRegistry.registrarFor("com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin"));
+      com.shinow.qrscan.QrscanPlugin.registerWith(shimPluginRegistry.registrarFor("com.shinow.qrscan.QrscanPlugin"));
   }
 }

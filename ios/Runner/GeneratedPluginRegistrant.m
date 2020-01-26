@@ -4,16 +4,16 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<flutter_barcode_scanner/FlutterBarcodeScannerPlugin.h>)
-#import <flutter_barcode_scanner/FlutterBarcodeScannerPlugin.h>
+#if __has_include(<qrscan/QrscanPlugin.h>)
+#import <qrscan/QrscanPlugin.h>
 #else
-@import flutter_barcode_scanner;
+@import qrscan;
 #endif
 
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
-  [FlutterBarcodeScannerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterBarcodeScannerPlugin"]];
+  [QrscanPlugin registerWithRegistrar:[registry registrarForPlugin:@"QrscanPlugin"]];
 }
 
 @end

@@ -1,3 +1,4 @@
+import 'package:Maintanence/screens/QRScanner.dart';
 import 'package:Maintanence/screens/ServiceList.dart';
 import 'package:Maintanence/screens/home.dart';
 import 'package:Maintanence/screens/second.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home' :(context) => Home(),
         '/second':(context)=>Second(),
-        '/maintainance':(context)=>ServiceList()
+      '/maintainance':(context)=>QRScanner()
       },
     );
   }
