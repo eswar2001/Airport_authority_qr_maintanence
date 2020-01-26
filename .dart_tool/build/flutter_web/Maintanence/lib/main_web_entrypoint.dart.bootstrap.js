@@ -53,17 +53,26 @@ var baseUrl = (function () {
 
 let modulePaths = {
  "dart_sdk": "packages/build_web_compilers/src/dev_compiler/dart_sdk",
+<<<<<<< HEAD
  "packages/Maintanence/data/items": "packages/Maintanence/data/items.ddc",
  "packages/Maintanence/data/services": "packages/Maintanence/data/services.ddc",
  "packages/Maintanence/datastructure/item": "packages/Maintanence/datastructure/item.ddc",
  "packages/Maintanence/datastructure/service": "packages/Maintanence/datastructure/service.ddc",
+=======
+ "packages/Maintanence/data structure/service": "packages/Maintanence/data structure/service.ddc",
+ "packages/Maintanence/data/services": "packages/Maintanence/data/services.ddc",
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
  "packages/Maintanence/main": "packages/Maintanence/main.ddc",
  "packages/Maintanence/main_web_entrypoint": "packages/Maintanence/main_web_entrypoint.ddc",
  "packages/Maintanence/screens/QRScanner": "packages/Maintanence/screens/QRScanner.ddc",
  "packages/Maintanence/screens/ServiceList": "packages/Maintanence/screens/ServiceList.ddc",
+<<<<<<< HEAD
  "packages/Maintanence/screens/addservice": "packages/Maintanence/screens/addservice.ddc",
  "packages/Maintanence/screens/home": "packages/Maintanence/screens/home.ddc",
  "packages/Maintanence/screens/screen3": "packages/Maintanence/screens/screen3.ddc",
+=======
+ "packages/Maintanence/screens/home": "packages/Maintanence/screens/home.ddc",
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
  "packages/Maintanence/screens/second": "packages/Maintanence/screens/second.ddc",
  "packages/Maintanence/widgets/Buttons": "packages/Maintanence/widgets/Buttons.ddc",
  "packages/collection/collection": "packages/collection/collection.ddc",
@@ -93,13 +102,20 @@ let modulePaths = {
  "packages/flutter/src/semantics/binding": "packages/flutter/src/semantics/binding.ddc",
  "packages/flutter/src/widgets/actions": "packages/flutter/src/widgets/actions.ddc",
  "packages/flutter/widgets": "packages/flutter/widgets.ddc",
+<<<<<<< HEAD
+=======
+ "packages/flutter_barcode_scanner/flutter_barcode_scanner": "packages/flutter_barcode_scanner/flutter_barcode_scanner.ddc",
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
  "packages/intl/date_symbols": "packages/intl/date_symbols.ddc",
  "packages/intl/intl": "packages/intl/intl.ddc",
  "packages/intl/number_symbols": "packages/intl/number_symbols.ddc",
  "packages/intl/number_symbols_data": "packages/intl/number_symbols_data.ddc",
  "packages/intl/src/plural_rules": "packages/intl/src/plural_rules.ddc",
  "packages/meta/meta": "packages/meta/meta.ddc",
+<<<<<<< HEAD
  "packages/qrscan/qrscan": "packages/qrscan/qrscan.ddc",
+=======
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
  "packages/typed_data/typed_buffers": "packages/typed_data/typed_buffers.ddc",
  "packages/vector_math/hash": "packages/vector_math/hash.ddc",
  "packages/vector_math/vector_math_64": "packages/vector_math/vector_math_64.ddc"

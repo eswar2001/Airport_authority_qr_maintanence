@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"isEntrypoint":true,"deps":["Maintanence|lib/data/items.dart","Maintanence|lib/datastructure/item.dart","flutter|lib/material.dart","intl|lib/intl.dart","datetime_picker_formfield|lib/datetime_picker_formfield.dart","qrscan|lib/qrscan.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["typed_data"],"hasMain":false}
+=======
+{"isEntrypoint":true,"deps":["Maintanence|lib/widgets/Buttons.dart","flutter|lib/material.dart","intl|lib/intl.dart","datetime_picker_formfield|lib/datetime_picker_formfield.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00

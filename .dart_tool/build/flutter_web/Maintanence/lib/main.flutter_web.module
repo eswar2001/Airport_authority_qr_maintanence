@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"p":["Maintanence","lib/main.dart"],"s":[["Maintanence","lib/main.dart"]],"d":[["Maintanence","lib/screens/QRScanner.dart"],["Maintanence","lib/screens/ServiceList.dart"],["Maintanence","lib/screens/addservice.dart"],["Maintanence","lib/screens/home.dart"],["Maintanence","lib/screens/screen3.dart"],["Maintanence","lib/screens/second.dart"],["flutter","lib/material.dart"]],"m":false,"is":true,"pf":"flutter_web"}
+=======
+{"p":["Maintanence","lib/main.dart"],"s":[["Maintanence","lib/main.dart"]],"d":[["Maintanence","lib/screens/QRScanner.dart"],["Maintanence","lib/screens/ServiceList.dart"],["Maintanence","lib/screens/home.dart"],["Maintanence","lib/screens/second.dart"],["flutter","lib/material.dart"]],"m":false,"is":true,"pf":"flutter_web"}
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00

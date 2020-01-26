@@ -113,7 +113,11 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/widgets/a
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
         [_Location_name]: "onpressed",
+<<<<<<< HEAD
         [_Location_column]: 43,
+=======
+        [_Location_column]: 44,
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         [_Location_line]: 18,
         [_Location_file]: null
       });
@@ -281,8 +285,13 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/widgets/a
     build(context) {
       return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new("Inventory Management", {$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C3 || CT.C3}), body: new safe_area.SafeArea.new({child: new basic.Center.new({child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: JSArrayOfWidget().of([new Buttons.Buttons.new({name: "New", onpressed: dart.fn(() => {
                     navigator.Navigator.pushNamed(core.Object, context, "/second");
+<<<<<<< HEAD
                   }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C6 || CT.C6}), new Buttons.Buttons.new({name: "Maintenence", onpressed: dart.fn(() => {
                     navigator.Navigator.pushNamed(core.Object, context, "/maintenance");
+=======
+                  }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C6 || CT.C6}), new Buttons.Buttons.new({name: "Maintainence", onpressed: dart.fn(() => {
+                    navigator.Navigator.pushNamed(core.Object, context, "/maintainance");
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
                   }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C10 || CT.C10})]), $creationLocationd_0dea112b090073317d4: C14 || CT.C14}), $creationLocationd_0dea112b090073317d4: C18 || CT.C18}), $creationLocationd_0dea112b090073317d4: C21 || CT.C21}), $creationLocationd_0dea112b090073317d4: C24 || CT.C24});
     }
   };
@@ -300,7 +309,11 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/widgets/a
   dart.trackLibraries("packages/Maintanence/screens/home", {
     "package:Maintanence/screens/home.dart": home
   }, {
+<<<<<<< HEAD
   }, '{"version":3,"sourceRoot":"","sources":["home.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,oCACG,+BACC,kBAAK,6IAER,mCACG,6BACE,sCACgC,8CACnB,sBAChB,+BAAc,kBAAiB;AACU,oBAA7B,2CAAU,OAAO,EAAE;2FAE/B,+BAAc,0BAAyB;AACO,oBAAlC,2CAAU,OAAO,EAAE;;IAO3C;;;;;;EACF","file":"home.ddc.js"}');
+=======
+  }, '{"version":3,"sourceRoot":"","sources":["home.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,oCACG,+BACC,kBAAK,6IAER,mCACG,6BACE,sCACgC,8CACnB,sBAChB,+BAAc,kBAAiB;AACU,oBAA7B,2CAAU,OAAO,EAAE;2FAE/B,+BAAc,2BAA0B;AACO,oBAAnC,2CAAU,OAAO,EAAE;;IAO3C;;;;;;EACF","file":"home.ddc.js"}');
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   // Exports:
   return {
     screens__home: home

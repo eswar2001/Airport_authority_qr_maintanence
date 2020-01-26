@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"p":["Maintanence","lib/screens/second.dart"],"s":[["Maintanence","lib/screens/second.dart"]],"d":[["Maintanence","lib/data/items.dart"],["Maintanence","lib/datastructure/item.dart"],["datetime_picker_formfield","lib/datetime_picker_formfield.dart"],["flutter","lib/material.dart"],["intl","lib/intl.dart"],["qrscan","lib/qrscan.dart"]],"m":false,"is":true,"pf":"flutter_web"}
+=======
+{"p":["Maintanence","lib/screens/second.dart"],"s":[["Maintanence","lib/screens/second.dart"]],"d":[["Maintanence","lib/widgets/Buttons.dart"],["datetime_picker_formfield","lib/datetime_picker_formfield.dart"],["flutter","lib/material.dart"],["intl","lib/intl.dart"]],"m":false,"is":true,"pf":"flutter_web"}
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00

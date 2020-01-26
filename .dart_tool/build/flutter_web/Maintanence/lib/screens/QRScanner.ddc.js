@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrscan', 'packages/Maintanence/data/items', 'packages/flutter/material', 'packages/flutter/src/rendering/animated_size', 'packages/flutter/src/painting/_network_image_web'], function(dart_sdk, packages__flutter__src__widgets__actions, packages__qrscan__qrscan, packages__Maintanence__data__items, packages__flutter__material, packages__flutter__src__rendering__animated_size, packages__flutter__src__painting___network_image_web) {
+=======
+define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter_barcode_scanner/flutter_barcode_scanner', 'packages/flutter/material', 'packages/flutter/src/painting/_network_image_web'], function(dart_sdk, packages__flutter__src__widgets__actions, packages__flutter_barcode_scanner__flutter_barcode_scanner, packages__flutter__material, packages__flutter__src__painting___network_image_web) {
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   'use strict';
   const core = dart_sdk.core;
   const async = dart_sdk.async;
@@ -7,6 +11,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const framework = packages__flutter__src__widgets__actions.src__widgets__framework;
+<<<<<<< HEAD
   const navigator = packages__flutter__src__widgets__actions.src__widgets__navigator;
   const text = packages__flutter__src__widgets__actions.src__widgets__text;
   const widget_inspector = packages__flutter__src__widgets__actions.src__widgets__widget_inspector;
@@ -16,10 +21,18 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
   const items = packages__Maintanence__data__items.data__items;
   const scaffold = packages__flutter__material.src__material__scaffold;
   const app_bar = packages__flutter__material.src__material__app_bar;
+=======
+  const container = packages__flutter__src__widgets__actions.src__widgets__container;
+  const basic = packages__flutter__src__widgets__actions.src__widgets__basic;
+  const text = packages__flutter__src__widgets__actions.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__actions.src__widgets__widget_inspector;
+  const flutter_barcode_scanner = packages__flutter_barcode_scanner__flutter_barcode_scanner.flutter_barcode_scanner;
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   const raised_button = packages__flutter__material.src__material__raised_button;
   const text_field = packages__flutter__material.src__material__text_field;
   const input_decorator = packages__flutter__material.src__material__input_decorator;
   const input_border = packages__flutter__material.src__material__input_border;
+<<<<<<< HEAD
   const flex = packages__flutter__src__rendering__animated_size.src__rendering__flex;
   const text_style = packages__flutter__src__painting___network_image_web.src__painting__text_style;
   const edge_insets = packages__flutter__src__painting___network_image_web.src__painting__edge_insets;
@@ -28,6 +41,12 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
   const $_get = dartx._get;
   let VoidToNull = () => (VoidToNull = dart.constFn(dart.fnType(core.Null, [])))();
   let StringToNull = () => (StringToNull = dart.constFn(dart.fnType(core.Null, [core.String])))();
+=======
+  const text_style = packages__flutter__src__painting___network_image_web.src__painting__text_style;
+  const edge_insets = packages__flutter__src__painting___network_image_web.src__painting__edge_insets;
+  const QRScanner = Object.create(dart.library);
+  let VoidToNull = () => (VoidToNull = dart.constFn(dart.fnType(core.Null, [])))();
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   let JSArrayOfWidget = () => (JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))();
   const CT = Object.create(null);
   dart.defineLazy(CT, {
@@ -36,8 +55,13 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
+<<<<<<< HEAD
         [_Location_column]: 34,
         [_Location_line]: 34,
+=======
+        [_Location_column]: 37,
+        [_Location_line]: 28,
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         [_Location_file]: null
       });
     },
@@ -49,8 +73,13 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
+<<<<<<< HEAD
         [_Location_column]: 29,
         [_Location_line]: 34,
+=======
+        [_Location_column]: 32,
+        [_Location_line]: 28,
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
       });
     },
@@ -58,6 +87,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
       return C5 = dart.const({
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
+<<<<<<< HEAD
         [_Location_name]: "title",
         [_Location_column]: 22,
         [_Location_line]: 34,
@@ -168,6 +198,72 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     },
     get C17() {
       return C17 = dart.const({
+=======
+        [_Location_name]: "child",
+        [_Location_column]: 26,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C4 = dart.constList([C5 || CT.C5, C6 || CT.C6], widget_inspector._Location);
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C4 || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 28,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
+      });
+    },
+    get C9() {
+      return C9 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C10 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C8 = dart.constList([C9 || CT.C9, C10 || CT.C10], widget_inspector._Location);
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C8 || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 32,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
+      });
+    },
+    get C11() {
+      return C11 = dart.const({
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         __proto__: edge_insets.EdgeInsets.prototype,
         [EdgeInsets_bottom]: 10,
         [EdgeInsets_right]: 32,
@@ -175,6 +271,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
         [EdgeInsets_left]: 32
       });
     },
+<<<<<<< HEAD
     get C20() {
       return C20 = dart.const({
         __proto__: widget_inspector._Location.prototype,
@@ -187,10 +284,15 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     },
     get C21() {
       return C21 = dart.const({
+=======
+    get C14() {
+      return C14 = dart.const({
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
         [_Location_name]: "decoration",
         [_Location_column]: 18,
+<<<<<<< HEAD
         [_Location_line]: 56,
         [_Location_file]: null
       });
@@ -210,20 +312,51 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     },
     get C24() {
       return C24 = dart.const({
+=======
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C13 = dart.constList([C14 || CT.C14], widget_inspector._Location);
+    },
+    get C12() {
+      return C12 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C13 || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 37,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
+      });
+    },
+    get C17() {
+      return C17 = dart.const({
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 15,
+<<<<<<< HEAD
         [_Location_line]: 51,
         [_Location_file]: null
       });
     },
     get C25() {
       return C25 = dart.const({
+=======
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C18 = dart.const({
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 16,
+<<<<<<< HEAD
         [_Location_line]: 52,
         [_Location_file]: null
       });
@@ -355,10 +488,55 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     },
     get C42() {
       return C42 = dart.const({
+=======
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C16 = dart.constList([C17 || CT.C17, C18 || CT.C18], widget_inspector._Location);
+    },
+    get C15() {
+      return C15 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C16 || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 35,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
+      });
+    },
+    get C21() {
+      return C21 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C20 = dart.constList([C21 || CT.C21], widget_inspector._Location);
+    },
+    get C19() {
+      return C19 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C20 || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 26,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
+      });
+    },
+    get C24() {
+      return C24 = dart.const({
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 9,
+<<<<<<< HEAD
         [_Location_line]: 36,
         [_Location_file]: null
       });
@@ -406,6 +584,45 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
         [_Location_name]: null,
         [_Location_column]: 12,
         [_Location_line]: 33,
+=======
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C23 = dart.constList([C24 || CT.C24], widget_inspector._Location);
+    },
+    get C22() {
+      return C22 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C23 || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 25,
+        [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
+      });
+    },
+    get C27() {
+      return C27 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C26 = dart.constList([C27 || CT.C27], widget_inspector._Location);
+    },
+    get C25() {
+      return C25 = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C26 || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 24,
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
         [_Location_file]: "org-dartlang-app:///packages/Maintanence/screens/QRScanner.dart"
       });
     }
@@ -426,6 +643,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     createState: dart.fnType(QRScanner._QRScannerState, [])
   }));
   dart.setLibraryUri(QRScanner.QRScanner, "package:Maintanence/screens/QRScanner.dart");
+<<<<<<< HEAD
   dart.defineLazy(QRScanner.QRScanner, {
     /*QRScanner.QRScanner.barcode*/get barcode() {
       return "";
@@ -433,6 +651,8 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     set barcode(_) {}
   });
   const _scan = dart.privateName(QRScanner, "_scan");
+=======
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   const _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
   const _Location_name = dart.privateName(widget_inspector, "_Location.name");
   const _Location_column = dart.privateName(widget_inspector, "_Location.column");
@@ -442,6 +662,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
   let C1;
   let C0;
   let C5;
+<<<<<<< HEAD
   let C4;
   let C3;
   let C8;
@@ -455,10 +676,20 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
   let C16;
   let C14;
   let C13;
+=======
+  let C6;
+  let C4;
+  let C3;
+  let C9;
+  let C10;
+  let C8;
+  let C7;
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   const EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
   const EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
   const EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
   const EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+<<<<<<< HEAD
   let C17;
   let C20;
   let C21;
@@ -521,12 +752,51 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     }
   };
   (QRScanner._QRScannerState.new = function() {
+=======
+  let C11;
+  let C14;
+  let C13;
+  let C12;
+  let C17;
+  let C18;
+  let C16;
+  let C15;
+  let C21;
+  let C20;
+  let C19;
+  let C24;
+  let C23;
+  let C22;
+  let C27;
+  let C26;
+  let C25;
+  QRScanner._QRScannerState = class _QRScannerState extends framework.State$(QRScanner.QRScanner) {
+    scanBarcodeNormal() {
+      return async.async(dart.dynamic, (function* scanBarcodeNormal() {
+        let barcodeScanRes = null;
+        barcodeScanRes = (yield flutter_barcode_scanner.FlutterBarcodeScanner.scanBarcode("#ff6666", "Cancel", true, flutter_barcode_scanner.ScanMode.QR));
+        core.print(barcodeScanRes);
+        this.setState(dart.fn(() => {
+          this.barcode = barcodeScanRes;
+        }, VoidToNull()));
+      }).bind(this));
+    }
+    build(context) {
+      return new container.Container.new({child: new basic.Center.new({child: new basic.Column.new({children: JSArrayOfWidget().of([new raised_button.RaisedButton.new({child: new text.Text.new("Scan QR Code", {$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), onPressed: dart.fn(() => {
+                  this.scanBarcodeNormal();
+                }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C3 || CT.C3}), new text.Text.new("OR", {style: new text_style.TextStyle.new({fontSize: 30.0, fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C7 || CT.C7}), new basic.Padding.new({padding: C11 || CT.C11, child: new text_field.TextField.new({decoration: new input_decorator.InputDecoration.new({labelText: "Enter Manually", border: new input_border.OutlineInputBorder.new()}), $creationLocationd_0dea112b090073317d4: C12 || CT.C12}), $creationLocationd_0dea112b090073317d4: C15 || CT.C15})]), $creationLocationd_0dea112b090073317d4: C19 || CT.C19}), $creationLocationd_0dea112b090073317d4: C22 || CT.C22}), $creationLocationd_0dea112b090073317d4: C25 || CT.C25});
+    }
+  };
+  (QRScanner._QRScannerState.new = function() {
+    this.barcode = null;
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
     QRScanner._QRScannerState.__proto__.new.call(this);
     ;
   }).prototype = QRScanner._QRScannerState.prototype;
   dart.addTypeTests(QRScanner._QRScannerState);
   dart.setMethodSignature(QRScanner._QRScannerState, () => ({
     __proto__: dart.getMethods(QRScanner._QRScannerState.__proto__),
+<<<<<<< HEAD
     [_scan]: dart.fnType(async.Future, []),
     build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
@@ -541,6 +811,20 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/qrscan/qrs
     "package:Maintanence/screens/QRScanner.dart": QRScanner
   }, {
   }, '{"version":3,"sourceRoot":"","sources":["QRScanner.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQmC;IAAiB;;;;;;EACpD;;;;;;;;MAHgB,2BAAO;YAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOV;AACH,uBAAU,MAAM;AAQrB,QAPF,cAAS;AACoB,UAAjB,8BAAU,OAAO;AAC3B,mBAAQ,IAAE,GAAE,AAAC,CAAA,gBAAC,AAAe,oDAAO,IAAA,AAAC,CAAA;AAEnC,gBAAa,AAAO,+BAAE,AAAc,AAAI,gDAAH,CAAC,YAC1B,AAA+B,2CAArB,cAAS;;;MAGrC;;;AAG6B,MAA1B,2CAAqB;AAEL,MAAX;IACR;UAE0B;AACxB,YAAO,oCACG,+BAAc,kBAAK,gIACrB,oCACG,6BACC,yCACiC,yCACnB,sBAChB,2CAAmB,kBAAK,mFACb;AAGP,oBAFF,cAAS;AACA,sBAAP;;2FAIJ,kBACI,cACE,wCAAoB,kBAA4B,+EACzD,sDAEW,yCACM,QAAC;AACa,sBAAb,8BAAQ,KAAK;oDAEb,oDAA2B,0BAC9B,+JAKZ,2CAAmB,kBAAK,oFACX;AACT,6BAAQ,IAAE,GAAE,AAAC,CAAA,gBAAC,AAAe,oDAAO,IAAA,AAAC,CAAA;AAEnC,0BAAa,AAAO,+BAAE,AAAc,AAAI,gDAAH,CAAC,YAC1B,AAA8B,2CAApB,OAAO,EAAE;;AAET,oBAAxB,WAAgB;;IAQhC;;;;;EACF;;;;;;;;;MAjEoB,wCAAc","file":"QRScanner.ddc.js"}');
+=======
+    scanBarcodeNormal: dart.fnType(async.Future, []),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(QRScanner._QRScannerState, "package:Maintanence/screens/QRScanner.dart");
+  dart.setFieldSignature(QRScanner._QRScannerState, () => ({
+    __proto__: dart.getFields(QRScanner._QRScannerState.__proto__),
+    barcode: dart.fieldType(core.String)
+  }));
+  dart.trackLibraries("packages/Maintanence/screens/QRScanner", {
+    "package:Maintanence/screens/QRScanner.dart": QRScanner
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["QRScanner.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAKmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAK0B;AACf;AAGoC,QAD3C,kBAAiB,MAA4B,0DACzC,WAAW,UAAU,MAAe;AACnB,QAArB,WAAM,cAAc;AAGlB,QAFF,cAAS;AACiB,UAAxB,eAAU,cAAc;;MAE5B;;UAE0B;AACxB,YAAO,qCACE,6BACC,gCACc,sBAChB,2CAAmB,kBAAK,mFACb;AACU,kBAAnB;yFAEF,kBACI,cACE,wCAAoB,kBAA4B,6EACvD,sDAEW,0CACO,oDAA2B,0BAC9B;IAQxB;;;IArCO;;;EAsCT","file":"QRScanner.ddc.js"}');
+>>>>>>> aefe407e9629b0bbcc4a18e33d8184d3784c7f00
   // Exports:
   return {
     screens__QRScanner: QRScanner
