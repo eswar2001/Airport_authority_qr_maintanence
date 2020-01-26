@@ -1,4 +1,5 @@
 import 'package:Maintanence/data/items.dart';
+import 'package:http/http.dart' as http;
 import 'package:Maintanence/datastructure/item.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:flutter/material.dart';
@@ -67,7 +68,8 @@ class _QRScannerState extends State<QRScanner> {
                       Navigator.pushNamed(context, '/screen3');
                   }
                   print(QRScanner.barcode);
-                },),
+                },
+                ),
             ],
           )
         ),

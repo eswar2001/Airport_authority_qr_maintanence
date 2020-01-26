@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["service.dart"],"names":[],"mappings":";;;;;;;;;;;;IAIS;;;;;;IACA;;;;;;IACE;;;;;;IACL;;;;;;;;QAJc;QAAQ;QAAa;QAAU;IAA/B;IAAQ;IAAa;IAAU;;EAAM","file":"service.ddc.js"}
+=======
+{"version":3,"sourceRoot":"","sources":["service.dart"],"names":[],"mappings":";;;;;;;;;;;;;IAIe;;;;;;IACA;;;;;;IACE;;;;;;IACL;;;;;;oBAGwC;AAChD,YAAO,qDACD,AAAI,IAAA,QAAC,oCACA,AAAI,IAAA,QAAC,wCACR,AAAI,IAAA,QAAC,gCACL,AAAI,IAAA,QAAC;IAEf;;;QAdkB;QAAQ;QAAa;QAAU;IAA/B;IAAQ;IAAa;IAAU;;EAAM","file":"service.ddc.js"}
+>>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d

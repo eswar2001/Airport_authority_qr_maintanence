@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["meta|lib/meta.dart","qr|lib/src/bit_buffer.dart","qr|lib/src/byte.dart","qr|lib/src/error_correct_level.dart","qr|lib/src/input_too_long_exception.dart","qr|lib/src/math.dart","qr|lib/src/polynomial.dart","qr|lib/src/rs_block.dart","qr|lib/src/util.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["math"],"hasMain":false}

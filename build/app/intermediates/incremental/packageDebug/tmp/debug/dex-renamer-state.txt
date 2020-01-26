@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Sun Jan 26 16:39:40 IST 2020
 base.0=D\:\\KIRAN\\MyProjects\\Airport_authority_qr_maintanence\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+=======
+#Sun Jan 26 16:20:12 IST 2020
+base.0=C\:\\Users\\eswar\\Projects\\Airport_authority_qr_maintanence\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+>>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d
 path.0=classes.dex
 renamed.0=classes.dex

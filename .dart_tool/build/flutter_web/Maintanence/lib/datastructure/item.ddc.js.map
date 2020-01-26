@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["item.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IAMS;;;;;;IACA;;;;;;IACE;;;;;;IACF;;;;;;IACE;;;;;;IACS;;;;;;eACU;AACF,MAAxB,AAAS,oBAAI,UAAU;IACzB;;AAGE,YAAO;IACT;;4BAbU,UAAc,UAAc,oBAAwB,kBAAsB;IAMlE;IANR;IAAc;IAAc;IAAwB;IAAsB;;EAAkB","file":"item.ddc.js"}
+=======
+{"version":3,"sourceRoot":"","sources":["item.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;IAQS;;;;;;IACA;;;;;;IACE;;;;;;IACF;;;;;;IACE;;;;;;IACS;;;;;;eACU;AACF,MAAxB,AAAS,oBAAI,UAAU;IACzB;;AAGE,YAAO;IACT;kBAEwB;AACvB,eAAqB;AAAS,yDACzB,YAAY,AAAE,CAAD,WACb,YAAY,AAAE,CAAD,WACb,sBAAsB,AAAE,CAAD,qBACvB,oBAAoB,AAAE,CAAD,mBACrB,qBAAqB,AAAE,CAAD;;;AAGnB,mBAAS,mBAAW,AAAG,GAAA;AAC9B,YAAO,OAAM;IACf;;4BA3BU,UAAe,UAAe,oBAC/B,kBAAuB;IAMd;IAPR;IAAe;IAAe;IAC/B;IAAuB;;EAAkB","file":"item.ddc.js"}
+>>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d

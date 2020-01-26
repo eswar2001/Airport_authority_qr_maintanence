@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["flutter|lib/foundation.dart","flutter|lib/widgets.dart","qr|lib/qr.dart","qr_flutter|lib/src/qr_painter.dart","qr_flutter|lib/src/qr_versions.dart","qr_flutter|lib/src/types.dart","qr_flutter|lib/src/validator.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async","ui"],"hasMain":false}

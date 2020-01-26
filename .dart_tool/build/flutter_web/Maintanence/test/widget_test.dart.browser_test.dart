@@ -3,6 +3,7 @@ import 'dart:html';
 import 'dart:js';
 
 import 'package:stream_channel/stream_channel.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:test_api/src/backend/stack_trace_formatter.dart'; // ignore: implementation_imports
 import 'package:test_api/src/util/stack_trace_mapper.dart'; // ignore: implementation_imports
 import 'package:test_api/src/remote_listener.dart'; // ignore: implementation_imports
@@ -17,6 +18,7 @@ Future<void> main() async {
   // this stuff in.
   ui.debugEmulateFlutterTesterEnvironment = true;
   await ui.webOnlyInitializePlatform();
+  webGoldenComparator = DefaultWebGoldenComparator(Uri.parse('file:///C:/Users/eswar/Projects/Airport_authority_qr_maintanence/test/widget_test.dart'));
   // TODO(flutterweb): remove need for dynamic cast.
   (ui.window as dynamic).debugOverrideDevicePixelRatio(3.0);
   (ui.window as dynamic).webOnlyDebugPhysicalSizeOverride = const ui.Size(2400, 1800);

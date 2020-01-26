@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["qr|lib/qr.dart","qr_flutter|lib/src/errors.dart","qr_flutter|lib/src/qr_image.dart","qr_flutter|lib/src/qr_painter.dart","qr_flutter|lib/src/qr_versions.dart","qr_flutter|lib/src/types.dart","qr_flutter|lib/src/validator.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

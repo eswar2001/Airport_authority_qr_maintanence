@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"isEntrypoint":true,"deps":["Maintanence|lib/datastructure/service.dart","intl|lib/intl.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
+=======
+{"isEntrypoint":true,"deps":["Maintanence|lib/datastructure/service.dart","intl|lib/intl.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["convert"],"hasMain":false}
+>>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d

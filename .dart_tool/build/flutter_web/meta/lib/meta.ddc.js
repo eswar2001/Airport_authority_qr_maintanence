@@ -103,8 +103,7 @@ define(['dart_sdk'], function(dart_sdk) {
       super.reason = value;
     }
   };
-  (meta.Immutable.new = function(reason) {
-    if (reason === void 0) reason = "";
+  (meta.Immutable.new = function(reason = "") {
     this[reason$] = reason;
     ;
   }).prototype = meta.Immutable.prototype;
@@ -123,8 +122,7 @@ define(['dart_sdk'], function(dart_sdk) {
       super.reason = value;
     }
   };
-  (meta.Required.new = function(reason) {
-    if (reason === void 0) reason = "";
+  (meta.Required.new = function(reason = "") {
     this[reason$0] = reason;
     ;
   }).prototype = meta.Required.prototype;
@@ -297,7 +295,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.trackLibraries("packages/meta/meta", {
     "package:meta/meta.dart": meta
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["meta.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAgQe;;;;;;;iCAGS;;;;EAAa;;;;;;;;;IAgBtB;;;;;;;gCAGQ;;;;EAAa;;;;;;;;;;EAIb;;;;;;EAIL;;;;;;EAIK;;;;;;EAIL;;;;;;EAID;;;;;;EAIK;;;;;;EAIJ;;;;;;EAIM;;;;;;EAIH;;;;;;EAIM;;;;;;EAIP;;;;;;EAIH;;;;;;EAKC;;;;;;EAIa;;;;;;EAIH;;;;;;;;;;;;;;;;;;;;;MAnSR,iBAAY;;;MAWjB,YAAO;;;MAsBF,iBAAY;;;MAYjB,YAAO;;;MAYN,cAAS;;;MAQX,WAAM;;;MAQD,gBAAW;;;MAaf,YAAO;;;MAeD,kBAAa;;;MAehB,eAAU;;;MAMJ,qBAAgB;;;MAmBvB,cAAS;;;MAeX,aAAQ;;;MAaT,WAAM;;;MAQL,YAAO;;;MAWM,yBAAoB;;;MAavB,sBAAiB","file":"meta.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["meta.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAgQe;;;;;;;;IAGS;;EAAa;;;;;;;;;IAgBtB;;;;;;;;IAGQ;;EAAa;;;;;;;;;;EAIb;;;;;;EAIL;;;;;;EAIK;;;;;;EAIL;;;;;;EAID;;;;;;EAIK;;;;;;EAIJ;;;;;;EAIM;;;;;;EAIH;;;;;;EAIM;;;;;;EAIP;;;;;;EAIH;;;;;;EAKC;;;;;;EAIa;;;;;;EAIH;;;;;;;;;;;;;;;;;;;;;MAnSR,iBAAY;;;MAWjB,YAAO;;;MAsBF,iBAAY;;;MAYjB,YAAO;;;MAYN,cAAS;;;MAQX,WAAM;;;MAQD,gBAAW;;;MAaf,YAAO;;;MAeD,kBAAa;;;MAehB,eAAU;;;MAMJ,qBAAgB;;;MAmBvB,cAAS;;;MAeX,aAAQ;;;MAaT,WAAM;;;MAQL,YAAO;;;MAWM,yBAAoB;;;MAavB,sBAAiB","file":"meta.ddc.js"}');
   // Exports:
   return {
     meta: meta
