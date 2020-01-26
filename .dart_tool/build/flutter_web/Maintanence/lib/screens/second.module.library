@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["Maintanence|lib/widgets/Buttons.dart","flutter|lib/material.dart","intl|lib/intl.dart","datetime_picker_formfield|lib/datetime_picker_formfield.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

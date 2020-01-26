@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["Maintanence|lib/screens/ServiceList.dart","Maintanence|lib/screens/home.dart","Maintanence|lib/screens/second.dart","flutter|lib/material.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}
