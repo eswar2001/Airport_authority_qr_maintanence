@@ -8,10 +8,7 @@ class QRScanner extends StatefulWidget {
 
 class _QRScannerState extends State<QRScanner> {
   String barcode;
-  Future _scanPhoto() async {
-    String barcode = await scanner.scanPhoto();
-    setState(() => this.barcode = barcode);
-  }
+
   Future _scan() async {
     String barcode = await scanner.scan();
     setState(() => this.barcode = barcode);
@@ -43,6 +40,8 @@ class _QRScannerState extends State<QRScanner> {
                   border: OutlineInputBorder(),),
         ),
            ),
+
+
               RaisedButton(child:Text('Get Details'),
                 onPressed: (){
                   print(barcode);

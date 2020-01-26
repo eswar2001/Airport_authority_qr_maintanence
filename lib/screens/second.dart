@@ -1,7 +1,11 @@
+import 'dart:typed_data';
+
 import 'package:Maintanence/widgets/Buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
+import 'package:qrscan/qrscan.dart' as scanner;
+
 
 
 class Second extends StatefulWidget {
@@ -10,6 +14,12 @@ class Second extends StatefulWidget {
 }
 
 class _SecondState extends State<Second> {
+  var image;
+  Uint8List bytes = Uint8List(200);
+  Future _generateBarCode() async {
+    Uint8List result = await scanner.generateBarCode('qrcode number');
+    this.setState(() => this.bytes = result);
+  }
   final dateFormat = DateFormat("EEEE, MMMM d, yyyy 'at' h:mma");
   DateTime date;
   @override
@@ -85,7 +95,21 @@ class _SecondState extends State<Second> {
                     padding: const EdgeInsets.all(32.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: <Widget>[Buttons(name: 'Get QR Code',onpressed: (){},)],
+                      children: <Widget>[RaisedButton ( child: Text("Generate Barcode"),
+                      onPressed: (){
+                        _generateBarCode();
+                      },),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: RaisedButton ( child: Text("get barcode"),
+                            onPressed: (){
+                              print(bytes);
+                              //image=MemoryImage(bytes);
+                              _settingModalBottomSheet(context,bytes);
+                            },),
+                        ),
+
+                      ],
                     ),
                   )
                 ],
@@ -93,6 +117,25 @@ class _SecondState extends State<Second> {
             ),
           ),
         )
+    );
+  }
+  void _settingModalBottomSheet(context,Uint8List bytes){
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext bc){
+          return Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              height: 150.0,
+              child: Image.memory(bytes,scale: 1.0,)
+//            child: new Wrap(
+//              children: <Widget>[
+//                Image.memory(bytes,scale: 1.0,)
+//              ],
+//            ),
+            ),
+          );
+        }
     );
   }
 
