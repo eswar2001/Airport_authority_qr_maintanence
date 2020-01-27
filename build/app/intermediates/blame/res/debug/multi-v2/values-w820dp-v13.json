@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\KIRAN\\MyProjects\\Airport_authority_qr_maintanence\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "D:\\KIRAN\\MyProjects\\Airport_authority_qr_maintanence\\build\\qrscan\\intermediates\\packaged_res\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
-=======
-            "outputFile": "C:\\Users\\eswar\\Projects\\Airport_authority_qr_maintanence\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\eswar\\Projects\\Airport_authority_qr_maintanence\\build\\qrscan\\intermediates\\packaged_res\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
->>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

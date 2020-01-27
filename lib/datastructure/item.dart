@@ -19,11 +19,6 @@ class Item {
   List<ServiceData> getServices() {
     return services;
   }
-<<<<<<< HEAD
-  
- 
-}
-=======
 
 static String toJson(Item i) {
    Map<String, dynamic> map() => {
@@ -39,4 +34,3 @@ static String toJson(Item i) {
   }
   
 }
->>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d

@@ -1,7 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "D:\\KIRAN\\MyProjects\\Airport_authority_qr_maintanence\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
@@ -16,12 +15,6 @@
                 },
                 {
                     "source": "C:\\Users\\g.kiransaiabhishek\\.gradle\\caches\\transforms-2\\files-2.1\\db2388f0fe5e05a7a168e5a9c11e912f\\material-1.0.0\\res\\values-land\\values-land.xml",
-=======
-            "outputFile": "C:\\Users\\eswar\\Projects\\Airport_authority_qr_maintanence\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\eswar\\.gradle\\caches\\transforms-2\\files-2.1\\db2388f0fe5e05a7a168e5a9c11e912f\\material-1.0.0\\res\\values-land\\values-land.xml",
->>>>>>> 1904cb9c084afeb1ff2b60d6703c34a5c49d111d
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -37,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\eswar\\.gradle\\caches\\transforms-2\\files-2.1\\7def8d6c3751559765cf68c2d5a2dddd\\appcompat-1.1.0\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]
