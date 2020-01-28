@@ -1,23 +1,27 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:Maintanence/data/items.dart';
 import 'package:Maintanence/datastructure/item.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
-
+import 'package:http/http.dart' as http;
 import 'GenerateScreen.dart';
 
+String serialno = '1234';
 
-String serialno='1234';
 class Register_item extends StatefulWidget {
   @override
   _Register_itemState createState() => _Register_itemState();
 }
 
 class _Register_itemState extends State<Register_item> {
-    String Itemname='';
-  
-  String Maintenance='';
+ 
+
+  static String Itemname = '';
+
+  static String Maintenance = '';
 
   //var image;
   // Uint8List bytes = Uint8List(200);
@@ -26,10 +30,31 @@ class _Register_itemState extends State<Register_item> {
   //   this.setState(() => this.bytes = result);
   // }
   final dateFormat = DateFormat("EEEE, MMMM d, yyyy 'at' h:mma");
-  DateTime dateofinstal;
-  DateTime dateofreplacement;
+  static DateTime dateofinstal;
+  static DateTime dateofreplacement;
+  change(Item i)
+  {
+    i.itemname=Itemname;
+    i.serialno=serialno;
+    i.dateofinstallation=dateofinstal;
+    i.Maintainencefreq=Maintenance;
+    i.dateofreplacement=dateofreplacement;
+  }
+  String toJson(Item i) {
+    Map<String, dynamic> map() => {
+          'itemname': i.itemname,
+          'serialno': i.serialno,
+          'dateofinstallation': i.dateofinstallation.toString(),
+          'Maintainencefreq': i.Maintainencefreq,
+          'dateofreplacement': i.dateofreplacement.toString()
+        };
+
+    String result = jsonEncode(map());
+    return result;
+  }
   
-  
+  Item obj=new Item(Itemname, serialno, dateofinstal, Maintenance, dateofreplacement);
+Register_item r=new Register_item();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,33 +165,55 @@ class _Register_itemState extends State<Register_item> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
-                        RaisedButton ( child: Text("Generate Barcode"),
-                      onPressed: (){
-                       // _generateBarCode();
-                       
-                        // print(bytes);
-                        Navigator.push(
+                        RaisedButton(
+                          child: Text("Generate Barcode"),
+                          onPressed: () {
+                            // _generateBarCode();
+
+                            // print(bytes);
+                            Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => GenerateScreen(serialno)),
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      GenerateScreen(serialno)),
                             );
-                        // MaterialPageRoute(
-                        //   builder: (context) => GenerateScreen(serialno),
-                        // );
-                          uploaddata();
-                              //image=MemoryImage(bytes);
+                            // MaterialPageRoute(
+                            //   builder: (context) => GenerateScreen(serialno),
+                            // );
+                            uploaddata();
+
+                            //image=MemoryImage(bytes);
                             //  _settingModalBottomSheet(context,bytes);
-                      },),
-                       ],
+                          },
+                        ),
+                      ],
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: RaisedButton(
-                      child: Text("Add"),
-                      onPressed: () {
-                            
-                      },
-                    ),
+                        child: Text("Add"),
+                        onPressed: () {
+                          uploaddata();
+                          change(obj);
+                          print(Itemname);
+                          print(serialno);
+                          print(dateofinstal);
+                          print(Maintenance);
+                          print(dateofreplacement);
+                          
+                          http
+                              .put(
+                                  'https://baymax-408db.firebaseio.com/Airport/$serialno.json',
+                                  body: toJson(obj))
+                              .then((http.Response response) {
+                            print(toJson(obj));
+                            // print('i should be executed before am i waiting');
+                          }).catchError((error) {
+                            print('There is an error');
+                            return false;
+                          });
+                        }),
                   ),
                 ],
               ),
@@ -196,5 +243,3 @@ class _Register_itemState extends State<Register_item> {
   // }
 
 }
-
-

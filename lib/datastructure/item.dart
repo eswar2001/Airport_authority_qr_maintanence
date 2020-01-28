@@ -19,18 +19,7 @@ class Item {
   List<ServiceData> getServices() {
     return services;
   }
-
-static String toJson(Item i) {
-   Map<String, dynamic> map() => {
-        'itemname': i.itemname,
-        'serialno': i.serialno,
-        'dateofinstallation': i.dateofinstallation,
-        'Maintainencefreq': i.Maintainencefreq,
-        'dateofreplacement': i.dateofreplacement
-      };
-
-    String result = jsonEncode(map());
-    return result;
-  }
+  send(itemname,serialno, dateofinstallation,
+      Maintainencefreq, dateofreplacement){}
   
 }
