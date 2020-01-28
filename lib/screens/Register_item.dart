@@ -40,18 +40,16 @@ class _Register_itemState extends State<Register_item> {
     i.Maintainencefreq=Maintenance;
     i.dateofreplacement=dateofreplacement;
   }
-  String toJson(Item i) {
+ 
     Map<String, dynamic> map() => {
-          'itemname': i.itemname,
-          'serialno': i.serialno,
-          'dateofinstallation': i.dateofinstallation.toString(),
-          'Maintainencefreq': i.Maintainencefreq,
-          'dateofreplacement': i.dateofreplacement.toString()
+          'itemname': obj.itemname,
+          'serialno': obj.serialno,
+          'dateofinstallation': obj.dateofinstallation.toString(),
+          'Maintainencefreq': obj.Maintainencefreq,
+          'dateofreplacement': obj.dateofreplacement.toString()
         };
 
-    String result = jsonEncode(map());
-    return result;
-  }
+  
   
   Item obj=new Item(Itemname, serialno, dateofinstal, Maintenance, dateofreplacement);
 Register_item r=new Register_item();
@@ -205,9 +203,9 @@ Register_item r=new Register_item();
                           http
                               .put(
                                   'https://baymax-408db.firebaseio.com/Airport/$serialno.json',
-                                  body: toJson(obj))
+                                  body: jsonEncode(map()))
                               .then((http.Response response) {
-                            print(toJson(obj));
+                            print(jsonEncode(map()));
                             // print('i should be executed before am i waiting');
                           }).catchError((error) {
                             print('There is an error');
